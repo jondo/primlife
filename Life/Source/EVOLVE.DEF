@@ -1,0 +1,15 @@
+NAME    PrimLife.SCR
+
+DESCRIPTION 'SCRNSAVE : Primordial Life 2.0'
+
+EXETYPE WINDOWS
+
+CODE    MOVEABLE
+DATA    MOVEABLE MULTIPLE
+
+HEAPSIZE  32767
+STACKSIZE 16348
+
+EXPORTS
+        ScreenSaverProc
+        ScreenSaverConfigureDialog

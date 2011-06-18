@@ -1,0 +1,1192 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""..\\res\\Primordial Life.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "..\\res\\evolve.ico"
+IDR_PLIFETYPE           ICON    DISCARDABLE     "..\\res\\PLifeDoc.ico"
+IDI_LEFT                ICON    DISCARDABLE     "..\\res\\left.ico"
+IDI_RIGHT               ICON    DISCARDABLE     "..\\res\\right.ico"
+IDI_TOP                 ICON    DISCARDABLE     "..\\res\\top.ico"
+IDI_WORLD               ICON    DISCARDABLE     "..\\res\\world.ico"
+IDI_BOTTOM              ICON    DISCARDABLE     "..\\res\\bottom.ico"
+IDI_FEMALE              ICON    DISCARDABLE     "..\\res\\female.ico"
+IDI_MALE                ICON    DISCARDABLE     "..\\res\\male.ico"
+IDI_ASEXUAL             ICON    DISCARDABLE     "..\\res\\asexual.ico"
+IDI_ASEXUAL_FEMALE      ICON    DISCARDABLE     "..\\res\\bisexual.ico"
+IDI_KEY                 ICON    DISCARDABLE     "..\\res\\key.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Simulation"
+    BEGIN
+        MENUITEM "Start Si&mulation",           ID_SIMULATION_STARTSIMULATION
+
+        MENUITEM "S&ettings...",                ID_SIMULATION_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Biots"
+    BEGIN
+        MENUITEM "C&ure/Sicken\t1",             ID_BIOTS_CURE
+        MENUITEM "E&xamine\t2",                 ID_BIOTS_MAGNIFY
+        MENUITEM "&Feed\t3",                    ID_BIOTS_FEED
+        MENUITEM "&Mutate\t4",                  ID_BIOTS_EDIT
+        MENUITEM "&Open\t5",                    ID_BIOTS_LOAD
+        MENUITEM "&Relocate\t6",                ID_BIOTS_RELOCATE
+        MENUITEM "&Save\t7",                    ID_BIOTS_SAVE
+        MENUITEM "&Terminate\t8",               ID_BIOTS_TERMINATE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Full Screen\tF12",           ID_VIEW_FULLSCREEN
+        MENUITEM "&Optimal Size\tF11",          ID_VIEW_BESTFITWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_VIEW_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Environmental Statistics",   ID_ENVIRONMENT_STATS
+        MENUITEM "&Network Status...",          ID_SIMULATION_WORLDSTATUS
+    END
+    POPUP "&Information"
+    BEGIN
+        MENUITEM "&Register Primordial Life...", ID_REGISTER
+        MENUITEM "&Learn about Primordial Life...", ID_APP_ABOUT
+    END
+END
+
+IDR_MAGNIFY_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Examine"
+    BEGIN
+        MENUITEM "&Shape",                      ID_SHAPE
+        MENUITEM "&Composition",                ID_COMPOSITION
+        MENUITEM "&Energy",                     ID_ENERGY
+        MENUITEM "&Breeding",                   ID_BREEDING
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "1",            ID_BIOTS_CURE,          VIRTKEY, NOINVERT
+    "2",            ID_BIOTS_MAGNIFY,       VIRTKEY, NOINVERT
+    "3",            ID_BIOTS_FEED,          VIRTKEY, NOINVERT
+    "4",            ID_BIOTS_EDIT,          VIRTKEY, NOINVERT
+    "5",            ID_BIOTS_LOAD,          VIRTKEY, NOINVERT
+    "6",            ID_BIOTS_RELOCATE,      VIRTKEY, NOINVERT
+    "7",            ID_BIOTS_SAVE,          VIRTKEY, NOINVERT
+    "8",            ID_BIOTS_TERMINATE,     VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_SIMULATION_STARTSIMULATION, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_VIEW_FULLSCREEN,     VIRTKEY, NOINVERT
+    VK_F1,          ID_APP_ABOUT,           VIRTKEY, NOINVERT
+    VK_F10,         ID_STEP_TIMER,          VIRTKEY, NOINVERT
+    VK_F11,         ID_VIEW_BESTFITWINDOW,  VIRTKEY, NOINVERT
+    VK_F12,         ID_VIEW_FULLSCREEN,     VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 322, 138
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Register Primordial Life 4.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FULL_NAME,117,22,121,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Register on the &Internet...",IDC_REGISTER_ONLINE,183,
+                    89,100,14
+    PUSHBUTTON      "Register &Offline...",IDC_REGISTER_OFFLINE,183,110,100,
+                    14
+    PUSHBUTTON      "OK",IDOK,260,13,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,260,31,50,14
+    PUSHBUTTON      "Help",ID_APP_ABOUT,260,49,50,14
+    LTEXT           "Your full name:",IDC_STATIC,53,25,48,8
+    LTEXT           "Registration key:",IDC_STATIC,53,44,54,8
+    ICON            IDI_KEY,IDC_STATIC,19,28,20,20
+    GROUPBOX        "Don't have a registration key?",IDC_STATIC,7,74,308,57
+    LTEXT           "You can register online at www.io.com/life:",IDC_STATIC,
+                    34,92,138,12
+    LTEXT           "Or you can register offline:",IDC_STATIC,34,112,91,8
+    GROUPBOX        "Fully enable Primordial Life by registering:",
+                    IDC_STATIC,7,5,308,63
+    EDITTEXT        IDC_KEY,117,41,61,14,ES_UPPERCASE | ES_AUTOHSCROLL
+END
+
+DLG_SCRNSAVECONFIGURE DIALOG DISCARDABLE  0, 0, 347, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Comic Sans MS"
+BEGIN
+    GROUPBOX        "For each screen saver session:",IDC_STATIC,0,6,114,62
+    CONTROL         "Start with a new population",IDC_NEWPOPULATION,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,20,92,10
+    CONTROL         "Stay with current population",IDC_OLDPOPULATION,"Button",
+                    BS_AUTORADIOBUTTON,11,33,98,11
+    PUSHBUTTON      "Erase Current Population",IDC_ERASE,11,49,90,12
+    DEFPUSHBUTTON   "OK",IDOK,3,166,45,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,3,186,45,14,WS_GROUP
+    PUSHBUTTON      "&Register!...",IDC_ABOUT2,2,111,45,14
+    PUSHBUTTON      "Need &Help?",IDC_ABOUT,3,206,45,14
+    PUSHBUTTON      "&Network...",IDC_NETWORK,2,95,45,14
+    DEFPUSHBUTTON   "&Make Default",ID_MAKE_DEFAULT,2,143,45,14,WS_GROUP
+    DEFPUSHBUTTON   "&Use Default",ID_USE_DEFAULT,2,127,45,14,WS_GROUP
+END
+
+IDD_NETWORK DIALOG DISCARDABLE  0, 0, 240, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Habitat Connections"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Connect my habitat to the following Primordial Hives:",
+                    IDC_STATIC1,14,18,193,8
+    CONTROL         "&Top",IDC_TOP_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,42,35,27,10
+    EDITTEXT        IDC_TOP_ADDRESS,88,34,136,13,ES_AUTOHSCROLL
+    CONTROL         "&Bottom",IDC_BOTTOM_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,42,56,36,10
+    EDITTEXT        IDC_BOTTOM_ADDRESS,88,54,136,13,ES_AUTOHSCROLL
+    CONTROL         "&Left",IDC_LEFT_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,42,76,29,10
+    EDITTEXT        IDC_LEFT_ADDRESS,88,75,136,13,ES_AUTOHSCROLL
+    CONTROL         "&Right",IDC_RIGHT_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,42,98,31,10
+    EDITTEXT        IDC_RIGHT_ADDRESS,88,96,136,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Find Primordial Hive links...",IDC_VIEW_SERVERS,88,118,
+                    136,14
+    GROUPBOX        "Building a world of biots, one habitat at a time",
+                    IDC_STATIC,4,2,228,138,BS_CENTER
+    ICON            IDI_TOP,IDC_STATIC,11,30,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_BOTTOM,IDC_STATIC,11,51,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_LEFT,IDC_STATIC,11,72,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_RIGHT,IDC_STATIC,11,93,20,20,SS_REALSIZEIMAGE
+END
+
+IDD_STATUS DIALOG DISCARDABLE  0, 0, 285, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Status of your World to World Connections"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_TOP,IDC_STATIC,12,60,18,20,SS_REALSIZEIMAGE
+    GROUPBOX        "Top",IDC_STATIC,5,46,274,41
+    ICON            IDI_LEFT,IDC_STATIC,11,154,18,20,SS_REALSIZEIMAGE
+    ICON            IDI_BOTTOM,IDC_STATIC,11,107,18,20,SS_REALSIZEIMAGE
+    ICON            IDI_RIGHT,IDC_STATIC,11,200,18,20,SS_REALSIZEIMAGE
+    GROUPBOX        "Bottom",IDC_STATIC,5,93,274,41
+    GROUPBOX        "Left",IDC_STATIC,5,139,274,41
+    GROUPBOX        "Right",IDC_STATIC,5,186,274,41
+    GROUPBOX        "Your World",IDC_ADDRESS,5,4,273,37
+    ICON            IDI_WORLD,IDC_STATIC,13,16,18,20,SS_REALSIZEIMAGE
+    LTEXT           "Exited:",IDC_STATIC,166,74,23,8
+    LTEXT           "Population:",IDC_STATIC,44,16,38,8
+    LTEXT           "Time:",IDC_STATIC,44,27,18,8
+    LTEXT           "Birth Rate:",IDC_STATIC,141,27,35,8
+    LTEXT           "Death Rate:",IDC_STATIC,141,16,39,8
+    LTEXT           "Entered:",IDC_STATIC,69,74,30,8
+    LTEXT           "Exited:",IDC_STATIC,166,120,25,8
+    LTEXT           "Entered:",IDC_STATIC,69,120,29,8
+    LTEXT           "Exited:",IDC_STATIC,166,166,30,8
+    LTEXT           "Entered:",IDC_STATIC,69,166,32,8
+    LTEXT           "Exited:",IDC_STATIC,166,213,34,8
+    LTEXT           "Entered:",IDC_STATIC,69,213,34,8
+    RTEXT           "123456789",IDC_TIME,86,27,37,8
+    RTEXT           "123456789",IDC_DIED,184,16,40,8
+    RTEXT           "123456789",IDC_BORN,184,27,40,8
+    RTEXT           "123456789",IDC_POPULATION,85,16,38,8
+    LTEXT           "Attempting To Connect...",IDC_BOTTOM_WORLD,44,102,228,
+                    16
+    LTEXT           "Waiting to Connect...",IDC_RIGHT_WORLD,44,194,228,16
+    LTEXT           "Disabled",IDC_LEFT_WORLD,44,148,228,16
+    RTEXT           "123456789",IDC_TOP_EXCHANGED,104,74,43,8
+    RTEXT           "123456789",IDC_TOP_BOUNCED,198,74,43,8
+    RTEXT           "123456789",IDC_BOTTOM_EXCHANGED,104,120,43,8
+    RTEXT           "123456789",IDC_BOTTOM_BOUNCED,198,120,43,8
+    RTEXT           "123456789",IDC_LEFT_EXCHANGED,104,166,43,8
+    RTEXT           "123456789",IDC_LEFT_BOUNCED,198,166,43,8
+    RTEXT           "123456789",IDC_RIGHT_EXCHANGED,104,213,45,8
+    RTEXT           "123456789",IDC_RIGHT_BOUNCED,198,213,43,8
+    LTEXT           "Jasonmason Jack Spofford connected from spofford.io.com (192.124.119.232)",
+                    IDC_TOP_WORLD,44,55,228,16
+    PUSHBUTTON      "&Network...",IDC_NETWORK,236,9,42,31
+END
+
+IDD_NEW_SIMULATION DIALOG DISCARDABLE  0, 0, 222, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Simulation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use entire screen.",IDC_ENTIRE_SCREEN,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,18,84,10
+    CONTROL         "Use maximized window.",IDC_ENTIRE_WINDOW,"Button",
+                    BS_AUTORADIOBUTTON,16,32,146,10
+    CONTROL         "Use current window.",IDC_FIT_WINDOW,"Button",
+                    BS_AUTORADIOBUTTON,16,46,83,10
+    CONTROL         "Custom size:",IDC_CUSTOM,"Button",BS_AUTORADIOBUTTON,16,
+                    60,57,10
+    EDITTEXT        IDC_WIDTH,104,58,34,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_HEIGHT,172,58,34,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_STARTING_POPULATION,104,97,27,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN_POPULATION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,131,97,
+                    11,14
+    EDITTEXT        IDC_SEED,104,114,59,14,ES_AUTOHSCROLL | WS_GROUP
+    COMBOBOX        IDC_TYPES_PER_BIOT,103,131,72,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ARMS_PER_BIOT,103,147,72,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SEGMENTS_PER_ARM,103,163,72,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,51,189,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,189,50,14
+    LTEXT           "Height:",IDC_HEIGHT_TEXT,146,61,24,8
+    GROUPBOX        "Initial Population Demographics:",IDC_STATIC,7,84,207,
+                    99
+    LTEXT           "Simulation Seed:",IDC_STATIC,16,117,54,8
+    GROUPBOX        "Environment Size",IDC_STATIC,7,5,207,73
+    LTEXT           "Width:",IDC_WIDTH_TEXT,80,61,22,8
+    LTEXT           "Starting Population:",IDC_STATIC,16,100,62,8
+    LTEXT           "Arm Types per Biot:",IDC_STATIC,16,133,62,8
+    LTEXT           "Arms per Biot:",IDC_STATIC,16,149,44,8
+    LTEXT           "Segments per Arm:",IDC_STATIC,15,165,60,8
+END
+
+DLG_SCRNSAVECONFIGURE1 DIALOG DISCARDABLE  0, 0, 347, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "Comic Sans MS"
+BEGIN
+    GROUPBOX        "Environment",-1,6,8,151,205
+    LTEXT           "Mutation rate:",-1,16,88,64,8,NOT WS_GROUP
+    LTEXT           "Starting population:",-1,16,105,64,9
+    LTEXT           "Life Span:",-1,16,159,51,9
+    LTEXT           "Regeneration Cost:",-1,16,177,62,9
+    LTEXT           "Regeneration Rate:",-1,16,195,65,9
+    LTEXT           "Solar Intensity:",-1,16,141,56,9
+    COMBOBOX        IDC_MUTATION,87,85,62,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_POPULATION,87,103,62,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LIFESPAN,87,157,62,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_REGENCOST,87,175,62,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_REGENTIME,87,193,62,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_GREEN,87,139,62,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Options",-1,165,7,124,206
+    LTEXT           "In General:",-1,172,20,44,8
+    CONTROL         "Turn off sounds",IDC_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,176,30,91,10
+    LTEXT           "Behaviors:",-1,171,70,41,8
+    CONTROL         "Allow parent to attack child",IDC_PARENTATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,176,80,102,10
+    CONTROL         "Allow siblings to battle",IDC_SIBLINGSATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,176,91,82,10
+    LTEXT           "Reproduction:",-1,14,65,50,8
+    CONTROL         "Asexual",IDC_ASEXUAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,176,122,83,10
+    CONTROL         "Sexual",IDC_SEXUAL,"Button",BS_AUTORADIOBUTTON,176,132,
+                    37,10
+    CONTROL         "Both asexual and sexual",IDC_BOTHSEXUAL,"Button",
+                    BS_AUTORADIOBUTTON,176,143,99,10
+    DEFPUSHBUTTON   "OK",IDOK,294,153,45,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,295,176,45,14,WS_GROUP
+    PUSHBUTTON      "&Register!...",IDC_ABOUT2,294,34,45,14
+    PUSHBUTTON      "Need &Help?",IDC_ABOUT,295,199,45,14
+    CONTROL         "Flicker free display (slower)",IDC_NOFLICKER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,176,42,107,10
+    LTEXT           "Friction:",-1,16,123,62,9
+    COMBOBOX        IDC_FRICTION,87,121,62,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Network...",IDC_NETWORK,294,11,45,14
+    DEFPUSHBUTTON   "&Make Default",ID_MAKE_DEFAULT,294,100,45,14,WS_GROUP
+    DEFPUSHBUTTON   "&Use Default",ID_USE_DEFAULT,294,78,45,14,WS_GROUP
+    COMBOBOX        IDC_MUTATION2,87,65,62,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+DLG_SIMULATION_SETTINGS DIALOG DISCARDABLE  0, 0, 347, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulation Settings"
+FONT 8, "Comic Sans MS"
+BEGIN
+    GROUPBOX        "Options",-1,6,6,124,206
+    LTEXT           "In General:",-1,172,20,44,8
+    CONTROL         "No sounds",IDC_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,20,91,10
+    DEFPUSHBUTTON   "OK",IDOK,294,140,45,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,294,159,45,14,WS_GROUP
+    PUSHBUTTON      "&Register!...",IDC_ABOUT2,293,119,45,14
+    PUSHBUTTON      "Need &Help?",IDC_ABOUT,295,199,45,14
+    CONTROL         "Flicker free display (slower)",IDC_NOFLICKER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,34,107,10
+    CONTROL         "Use Mouse",IDC_MOUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,50,84,10
+    CONTROL         "Slider1",IDC_PROCESSING,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,19,82,100,15
+END
+
+IDD_EDITOR DIALOG DISCARDABLE  0, 0, 209, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Biot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "4",IDC_TOTAL_DISTANCE,4,47,83,8
+    LTEXT           "4",IDC_BENEFIT,5,35,93,8
+    LTEXT           "4",IDC_RATIO,5,60,99,8
+    LTEXT           "4",IDC_ENERGY,55,20,101,8
+    LTEXT           "4",IDC_LINE1,55,6,117,8
+    LTEXT           "4",IDC_LINE2,41,78,110,8
+    LTEXT           "Energy:",IDC_STATIC,4,115,25,8
+    CONTROL         "Slider1",IDC_ENERGY_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,36,113,171,18
+    LTEXT           "Lifespan:",IDC_STATIC,3,94,30,8
+    CONTROL         "Slider1",IDC_AGE_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,36,92,171,18
+    ICON            "",IDC_SEX,182,6,20,20,SS_REALSIZEIMAGE
+    LTEXT           "Age:",IDC_STATIC,4,78,16,8
+    LTEXT           "Species:",IDC_STATIC,5,6,28,8
+    LTEXT           "Energy Rate:",IDC_STATIC,5,20,47,8
+END
+
+IDD_BREEDING DIALOG DISCARDABLE  0, 0, 215, 134
+STYLE WS_CHILD
+FONT 8, "Arial"
+BEGIN
+    EDITTEXT        IDC_NAME,54,10,52,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SPECIES,54,27,53,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_GENERATION,165,9,38,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Apply",IDC_APPLY,65,46,28,27,BS_ICON
+    LTEXT           "Species:",IDC_STATIC,11,29,32,8
+    LTEXT           "Generation:",IDC_STATIC,121,11,39,8
+    LTEXT           "Total Children:",IDC_STATIC,11,114,46,8
+    LTEXT           "Fertile:",IDC_FERTILE_TEXT,11,100,35,8
+    LTEXT           "Name:",IDC_STATIC,11,13,24,8
+    LTEXT           "From:",IDC_STATIC,11,87,37,8
+    LTEXT           "World Name",IDC_WORLD_NAME,72,87,119,8
+    LTEXT           "0",IDC_CHILDREN,72,114,47,8
+    LTEXT           "n/a",IDC_FERTILE,72,100,119,8
+    GROUPBOX        "",IDC_STATIC,3,0,208,77
+    GROUPBOX        "",IDC_STATIC,3,77,208,51
+    LTEXT           "Days Old:",IDC_STATIC,121,27,32,8
+    LTEXT           "LifeSpan:",IDC_STATIC,121,45,32,8
+    EDITTEXT        IDC_AGE,165,26,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIFESPAN,165,43,38,12,ES_AUTOHSCROLL
+    LTEXT           "Orientation:",IDC_STATIC,12,54,38,8
+    PUSHBUTTON      "Apply",IDC_SAVE,165,59,38,14
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 247, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "Slider1",IDC_AGE_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,15,57,171,22
+    LTEXT           "4",IDC_TOTAL_DISTANCE,53,101,171,10
+    LTEXT           "4",IDC_BENEFIT,48,108,171,10
+    LTEXT           "4",IDC_ENERGY,69,71,101,10
+    CONTROL         "Slider1",IDC_ENERGY_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,33,102,171,22
+    LTEXT           "Energy Rate:",IDC_STATIC,94,79,47,10
+    LTEXT           "4",IDC_LINE2,50,77,137,10
+    LTEXT           "4",IDC_LINE1,83,68,117,10
+    LTEXT           "Age:",IDC_STATIC,90,21,16,10
+    LTEXT           "Energy:",IDC_STATIC,51,13,25,10
+    LTEXT           "4",IDC_RATIO,21,48,169,10
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_WORLD DIALOG DISCARDABLE  0, 0, 240, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Habitat Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use entire screen.",IDC_ENTIRE_SCREEN,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,20,84,10
+    CONTROL         "Use maximized window.",IDC_ENTIRE_WINDOW,"Button",
+                    BS_AUTORADIOBUTTON,16,36,146,10
+    CONTROL         "Use current window.",IDC_FIT_WINDOW,"Button",
+                    BS_AUTORADIOBUTTON,16,52,83,10
+    CONTROL         "Custom size:",IDC_CUSTOM,"Button",BS_AUTORADIOBUTTON,16,
+                    68,57,10
+    EDITTEXT        IDC_WIDTH,104,66,34,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_HEIGHT,172,66,34,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Height:",IDC_HEIGHT_TEXT,146,69,24,8
+    GROUPBOX        "Habitat Size",IDC_STATIC,9,5,223,85
+    LTEXT           "Width:",IDC_WIDTH_TEXT,80,69,22,8
+END
+
+IDD_INITIAL_POPULATION DIALOG DISCARDABLE  0, 0, 240, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Initial Population"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_STARTING_POPULATION,104,22,27,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN_POPULATION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,131,22,
+                    11,14
+    EDITTEXT        IDC_SEED,104,41,59,14,ES_AUTOHSCROLL | WS_GROUP
+    COMBOBOX        IDC_TYPES_PER_BIOT,103,60,72,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ARMS_PER_BIOT,103,78,72,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SEGMENTS_PER_ARM,103,96,72,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Initial Population Demographics:",IDC_STATIC,7,5,225,
+                    114
+    LTEXT           "Simulation Seed:",IDC_STATIC,16,43,54,8
+    LTEXT           "Starting Population:",IDC_STATIC,16,25,62,8
+    LTEXT           "Arm Types per Biot:",IDC_STATIC,16,62,62,8
+    LTEXT           "Arms per Biot:",IDC_STATIC,16,80,44,8
+    LTEXT           "Segments per Arm:",IDC_STATIC,15,98,60,8
+    CONTROL         "Generate a new population if the population goes extinct.",
+                    IDC_GENERATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,
+                    127,195,10
+END
+
+IDD_ENVIRONMENT DIALOG DISCARDABLE  0, 0, 240, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Habitat Environment"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Solar Intensity:",IDC_STATIC,17,25,65,10
+    COMBOBOX        IDC_GREEN,99,23,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Friction:",IDC_STATIC,17,8,73,10
+    COMBOBOX        IDC_FRICTION,100,6,73,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Solar Pattern:",IDC_STATIC,17,43,65,10
+    LTEXT           "Wind Intensity:",IDC_STATIC,17,60,65,10
+    LTEXT           "Wind Pattern:",IDC_STATIC,17,78,65,10
+    LTEXT           "Electrical Storms:",IDC_STATIC,17,96,65,10
+    LTEXT           "Gravity Intensity:",IDC_STATIC,17,113,65,10
+    LTEXT           "Gravity Pattern:",IDC_STATIC,17,130,65,10
+END
+
+IDD_BIOTS DIALOG DISCARDABLE  0, 0, 240, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Biots"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Behaviors:",IDC_STATIC,13,21,48,9
+    CONTROL         "Allow parent to attack child",IDC_PARENTATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,32,119,12
+    CONTROL         "Allow siblings to battle",IDC_SIBLINGSATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,45,96,12
+    LTEXT           "Reproduction:",IDC_STATIC,13,69,59,9
+    CONTROL         "Asexual",IDC_ASEXUAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,19,81,97,12
+    CONTROL         "Sexual",IDC_SEXUAL,"Button",BS_AUTORADIOBUTTON,19,93,43,
+                    12
+    CONTROL         "Both asexual and sexual",IDC_BOTHSEXUAL,"Button",
+                    BS_AUTORADIOBUTTON,0,66,115,12
+    COMBOBOX        IDC_COMBO1,93,66,87,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Blue Sheild Cost:",IDC_STATIC,101,141,54,8
+    LTEXT           "Red Teeth Cost:",IDC_STATIC,117,157,53,8
+    LTEXT           "Movement Cost:",IDC_STATIC,120,121,52,8
+    LTEXT           "Mutation rate:",IDC_STATIC,101,18,75,9,NOT WS_GROUP
+    COMBOBOX        IDC_MUTATION,138,15,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Regeneration Cost:",IDC_STATIC,97,87,73,10
+    COMBOBOX        IDC_REGENCOST,149,84,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Regeneration Rate:",IDC_STATIC,101,164,76,10
+    COMBOBOX        IDC_REGENTIME,144,161,73,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LIFESPAN,115,105,73,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Life Span:",IDC_STATIC,43,113,59,10
+END
+
+IDD_NET DIALOG DISCARDABLE  0, 0, 240, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Network"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Connecting biots together, one world at a time",
+                    IDC_STATIC,6,3,228,172,BS_CENTER
+    CONTROL         "I want to connect  biot worlds!",IDC_CONNECT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,16,17,
+                    119,12
+    CONTROL         "I'll accept connections at:",IDC_LISTEN_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,53,40,129,10
+    LTEXT           "Connect the sides of my world to these Internet addresses:",
+                    IDC_STATIC1,15,68,221,9,WS_DISABLED
+    CONTROL         "&Left",IDC_LEFT_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,53,130,34,12
+    EDITTEXT        IDC_LEFT_ADDRESS,103,128,121,15,ES_AUTOHSCROLL
+    CONTROL         "&Right",IDC_RIGHT_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,53,152,36,12
+    EDITTEXT        IDC_RIGHT_ADDRESS,103,150,121,15,ES_AUTOHSCROLL
+    CONTROL         "&Top",IDC_TOP_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,53,87,31,12
+    EDITTEXT        IDC_TOP_ADDRESS,103,85,121,15,ES_AUTOHSCROLL
+    CONTROL         "&Bottom",IDC_BOTTOM_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,53,108,42,12
+    EDITTEXT        IDC_BOTTOM_ADDRESS,103,106,121,15,ES_AUTOHSCROLL
+    LTEXT           "",IDC_ADDRESS,53,50,187,9
+    ICON            IDI_TOP,IDC_STATIC,15,84,23,23,SS_REALSIZEIMAGE
+    ICON            IDI_BOTTOM,IDC_STATIC,15,106,23,23,SS_REALSIZEIMAGE
+    ICON            IDI_LEFT,IDC_STATIC,15,128,23,23,SS_REALSIZEIMAGE
+    ICON            IDI_RIGHT,IDC_STATIC,15,148,23,23,SS_REALSIZEIMAGE
+    ICON            IDI_WORLD,IDC_STATIC,15,36,23,23,SS_REALSIZEIMAGE
+END
+
+BIOT_OPTIONS DIALOG DISCARDABLE  1, 15, 254, 227
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Mutation rate:",IDC_STATIC,0,18,44,9,NOT WS_GROUP
+    LTEXT           "Regeneration Cost:",IDC_STATIC,0,42,63,10
+    LTEXT           "Regeneration Rate:",IDC_STATIC,0,63,63,10
+    COMBOBOX        IDC_MUTATION,64,17,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_REGENCOST,64,39,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_REGENTIME,64,60,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Allow parent to attack child",IDC_PARENTATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,150,100,12
+    CONTROL         "Allow siblings to battle",IDC_SIBLINGSATTACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,164,96,12
+    CONTROL         "Asexual",IDC_ASEXUAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,7,91,97,12
+    CONTROL         "Sexual",IDC_SEXUAL,"Button",BS_AUTORADIOBUTTON,7,103,43,
+                    12
+    CONTROL         "Both asexual and sexual",IDC_BOTHSEXUAL,"Button",
+                    BS_AUTORADIOBUTTON,7,114,115,12
+    GROUPBOX        "Reproduction:",IDC_STATIC,0,83,128,51
+    GROUPBOX        "Behaviors:",IDC_STATIC,0,136,107,43
+    LTEXT           "Biot options",IDC_STATIC,111,2,38,8
+END
+
+HABITAT_OPTIONS DIALOG DISCARDABLE  1, 15, 254, 227
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Starting population:",IDC_STATIC,0,68,75,10
+    LTEXT           "Solar Intensity:",IDC_STATIC,0,108,65,10
+    COMBOBOX        IDC_POPULATION,84,66,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_GREEN,84,106,73,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Turn off sounds",IDC_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,22,69,12
+    LTEXT           "Friction:",IDC_STATIC,0,87,73,10
+    COMBOBOX        IDC_FRICTION,84,85,73,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Use Mouse",IDC_MOUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,35,62,12
+    GROUPBOX        "In General:",IDC_STATIC,5,10,116,43
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Evolving populations, one biot at a time.\0"
+            VALUE "CompanyName", "Jason Spofford\0"
+            VALUE "FileDescription", "Primordial Life\0"
+            VALUE "FileVersion", "4, 0, 0, 0\0"
+            VALUE "InternalName", "PRIMORDIAL LIFE\0"
+            VALUE "LegalCopyright", "Copyright © 1996-1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PRIMLIFE.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Primordial Life\0"
+            VALUE "ProductVersion", "4, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        VERTGUIDE, 340
+        HORZGUIDE, 213
+    END
+
+    IDD_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_NEW_SIMULATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    DLG_SCRNSAVECONFIGURE1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 339
+    END
+
+    DLG_SIMULATION_SETTINGS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 339
+    END
+
+    IDD_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_BREEDING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    "IDD_DIALOG1", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    "IDD_DIALOG2", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_WORLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_INITIAL_POPULATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_ENVIRONMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_BIOTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_NET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    BIOT_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    HABITAT_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TERMINATE           CURSOR  DISCARDABLE     "..\\res\\terminate.cur"
+IDC_FEED                CURSOR  DISCARDABLE     "..\\res\\feed.cur"
+IDC_MAGNIFY             CURSOR  DISCARDABLE     "..\\res\\magnify.cur"
+IDC_RELOCATE            CURSOR  DISCARDABLE     "..\\res\\relocate.cur"
+IDC_SAVE                CURSOR  DISCARDABLE     "..\\res\\save.cur"
+IDC_LOAD                CURSOR  DISCARDABLE     "..\\res\\load.cur"
+IDC_CURE                CURSOR  DISCARDABLE     "..\\res\\cure.cur"
+IDC_EDIT                CURSOR  DISCARDABLE     "..\\res\\edit.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PALETTE_COLORREF
+//
+
+IDR_EXPLORER_PALETTE    PALETTE_COLORREF DISCARDABLE "..\\RES\\InternetExplorer.pal"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "..\\res\\logo.bmp"
+IDR_ENVSTATS            BITMAP  DISCARDABLE     "..\\res\\envstats.bmp"
+IDR_BIOTSTATS           BITMAP  DISCARDABLE     "..\\res\\biotstats.bmp"
+IDB_BOTTOM              BITMAP  DISCARDABLE     "..\\res\\bottom.bmp"
+IDB_TOP                 BITMAP  DISCARDABLE     "..\\res\\top.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_ENVSTATS TOOLBAR DISCARDABLE  78, 16
+BEGIN
+    BUTTON      ID_POPULATION
+    BUTTON      ID_LINE_TYPES
+    BUTTON      ID_AGE_SPREAD
+    BUTTON      ID_ENERGY_SPREAD
+END
+
+IDR_BIOTSTATS TOOLBAR DISCARDABLE  75, 20
+BEGIN
+    BUTTON      ID_SHAPE
+    BUTTON      ID_ENERGY
+    BUTTON      ID_COMPOSITION
+    BUTTON      ID_BREEDING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BREEDING DLGINIT
+BEGIN
+    IDC_SPECIES, 0x403, 7, 0
+0x6552, 0x7078, 0x646f, "\000" 
+    IDC_SPECIES, 0x403, 6, 0
+0x6f50, 0x7364, 0x006f, 
+    IDC_SPECIES, 0x403, 6, 0
+0x6f53, 0x6166, 0x0072, 
+    IDC_SPECIES, 0x403, 7, 0
+0x6146, 0x7a72, 0x6c65, "\000" 
+    IDC_SPECIES, 0x403, 8, 0
+0x655a, 0x6d6c, 0x636f, 0x006b, 
+    IDC_SPECIES, 0x403, 8, 0
+0x6f4d, 0x6b63, 0x6973, 0x006c, 
+    IDC_SPECIES, 0x403, 7, 0
+0x6953, 0x646c, 0x6d75, "\000" 
+    IDC_SPECIES, 0x403, 7, 0
+0x7544, 0x626d, 0x726f, "\000" 
+    IDC_SPECIES, 0x403, 7, 0
+0x6f42, 0x6e72, 0x7369, "\000" 
+    IDC_SPECIES, 0x403, 7, 0
+0x694e, 0x6173, 0x6b63, "\000" 
+    IDC_SPECIES, 0x403, 6, 0
+0x6341, 0x656b, 0x006c, 
+    IDC_SPECIES, 0x403, 5, 0
+0x6c45, 0x6f6d, "\000" 
+    IDC_SPECIES, 0x403, 6, 0
+0x6f4d, 0x6977, 0x006e, 
+    IDC_SPECIES, 0x403, 6, 0
+0x6957, 0x646e, 0x006f, 
+    IDC_SPECIES, 0x403, 6, 0
+0x6f44, 0x6f72, 0x0064, 
+    IDC_SPECIES, 0x403, 7, 0
+0x6f52, 0x7264, 0x7865, "\000" 
+    0
+END
+
+IDD_NEW_SIMULATION DLGINIT
+BEGIN
+    IDC_TYPES_PER_BIOT, 0x403, 7, 0
+0x2031, 0x7954, 0x6570, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 13, 0
+0x2031, 0x6f74, 0x3220, 0x5420, 0x7079, 0x7365, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 13, 0
+0x2031, 0x6f74, 0x3320, 0x5420, 0x7079, 0x7365, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 13, 0
+0x2031, 0x6f74, 0x3420, 0x5420, 0x7079, 0x7365, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 1, 0
+"\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 11, 0
+0x7546, 0x6c6c, 0x5220, 0x6e61, 0x6567, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2031, 0x6f74, 0x3220, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2033, 0x6f74, 0x3420, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2035, 0x6f74, 0x3620, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2037, 0x6f74, 0x3820, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 11, 0
+0x7546, 0x6c6c, 0x5220, 0x6e61, 0x6567, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 7, 0
+0x2031, 0x6f74, 0x3320, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 7, 0
+0x2034, 0x6f74, 0x3720, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 8, 0
+0x2037, 0x6f74, 0x3120, 0x0030, 
+    0
+END
+
+IDD_INITIAL_POPULATION DLGINIT
+BEGIN
+    IDC_TYPES_PER_BIOT, 0x403, 7, 0
+0x2031, 0x7954, 0x6570, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 13, 0
+0x2031, 0x6f74, 0x3220, 0x5420, 0x7079, 0x7365, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 13, 0
+0x2031, 0x6f74, 0x3320, 0x5420, 0x7079, 0x7365, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 13, 0
+0x2031, 0x6f74, 0x3420, 0x5420, 0x7079, 0x7365, "\000" 
+    IDC_TYPES_PER_BIOT, 0x403, 1, 0
+"\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 11, 0
+0x7546, 0x6c6c, 0x5220, 0x6e61, 0x6567, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2031, 0x6f74, 0x3220, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2033, 0x6f74, 0x3420, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2035, 0x6f74, 0x3620, "\000" 
+    IDC_ARMS_PER_BIOT, 0x403, 7, 0
+0x2037, 0x6f74, 0x3820, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 11, 0
+0x7546, 0x6c6c, 0x5220, 0x6e61, 0x6567, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 7, 0
+0x2031, 0x6f74, 0x3320, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 7, 0
+0x2034, 0x6f74, 0x3720, "\000" 
+    IDC_SEGMENTS_PER_ARM, 0x403, 8, 0
+0x2037, 0x6f74, 0x3120, 0x0030, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Primordial Life 4.0\n\nPLife\nPrimordial Life Files (*.plf)\n.PLF\nPrimordialLife.Document\nPrimordial Life Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Primordial Life"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new simulation\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_DAY                 "Day"
+    IDS_POPULATION          " Population"
+    IDS_EXTINCTIONS         " Extinctions"
+    IDS_EMPTY               " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SIMULATION_STARTSIMULATION "Start or stop the simulation"
+    ID_SHAPE                "\nAge Distribution"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMPOSITION          "\nBreak down line composition"
+    ID_ENERGY               "\nLine Type Graph"
+    ID_BREEDING             "\nPopulation Graph"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ENERGY_SPREAD        "\nEnergy Spread"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "..\res\Primordial Life.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
